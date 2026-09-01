@@ -63,19 +63,22 @@ int pSIX(int j){
 }
 
 
-int pSEVEN(int j){
-    for(int i = 1; i <= j; i++){
-        for(int k = j; k >= 1; k--){
-            cout<<"*";
+int pSEVEN(int j){// this was a bit difficult one
+    for(int i = 0; i < j; i++){
+        for(int k = j-i-1; k > 1 ;k--){
+            cout<<" ";
 
         }
+    for(int z = 0 ; z < 2*i+1 ;z++){
+        cout<<"*";
+    }
         cout<<endl;
     }
 }
 
 
 int main(){
-  cout<<pSEVEN(4)<<endl;
+  cout<<pSEVEN(5)<<endl;
   return 0;
 
 

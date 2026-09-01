@@ -1,0 +1,82 @@
+#include<iostream>
+using namespace std;
+
+int pSONE(int j){
+    for (int i = 0;  i <=j; i++){
+        for(int k =0;  k <=j; k++){
+            cout<<"*";
+            
+        }
+        cout<<endl;
+    }
+}
+
+int pSEC(int j){
+    for(int i =0; i<j; i++){
+        for(int k = 0; k <= i; k++){
+            cout<<"*";
+
+        }
+        cout<<endl;
+    }
+}
+
+int pTHIR(int j){
+    for(int i =1; i<=j; i++){
+        for(int k = 1; k <= i; k++){
+            cout<<k;
+
+        }
+        cout<<endl;
+    }
+}
+
+int pFOUR(int j){
+    for(int i = 1; i <= j; i++){
+        for(int k = 1; k <= i; k++){
+            cout<<i;
+
+        }
+        cout<<endl;
+    }
+}
+ 
+int pFIVE(int j){
+    for(int i = 1; i <= j; i++){
+        for(int k = j; k >= i; k--){
+            cout<<"*";
+
+        }
+        cout<<endl;
+    }
+}
+
+
+int pSIX(int j){
+    for(int i = j; i >= 1; i--){
+        for(int k = 1; k <= i; k++){
+            cout<<k;
+
+        }
+        cout<<endl;
+    }
+}
+
+
+int pSEVEN(int j){
+    for(int i = 1; i <= j; i++){
+        for(int k = j; k >= 1; k--){
+            cout<<"*";
+
+        }
+        cout<<endl;
+    }
+}
+
+
+int main(){
+  cout<<pSEVEN(4)<<endl;
+  return 0;
+
+
+}

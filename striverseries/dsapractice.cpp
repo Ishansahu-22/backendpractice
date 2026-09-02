@@ -1,6 +1,7 @@
-#include<isotream>
+#include<iostream>
+#include<vector>
 using namespace std;
-void 2460(){//apply operations
+void twofoursixzero(){//apply operations
     class Solution {
 public:
     vector<int> applyOperations(vector<int>& nums) {
@@ -33,6 +34,59 @@ public:
 };
 
 }
+
+
+class Seventyfi {
+public:
+    void sortColors(vector<int>& nums) {
+        
+     int counto = 0;
+     int countt = 0;
+     int counttr = 0;
+     int gin = nums.size();
+
+
+
+     for( int i = nums.size()-1 ; i >= 0 ; i--){
+        if( nums[i] == 0){
+            counto++;
+            nums.pop_back();
+
+
+        }else if( nums[i] == 1){
+            countt++;
+            nums.pop_back();
+            
+        }else{
+            counttr++;
+            nums.pop_back();
+        }
+        
+     };
+
+
+     for(int j = 0 ; j<counto; j++){
+        nums.push_back(0);
+     }
+     
+     for(int k = 0 ; k  < countt ; k++){
+        nums.push_back(1);
+     }
+     
+     for(int l = 0 ; l < counttr ; l++){
+        nums.push_back(2);
+     }
+
+
+
+    
+
+    }
+};
+
+
+
+
 
 
 

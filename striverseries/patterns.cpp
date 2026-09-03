@@ -65,7 +65,7 @@ int pSIX(int j){
 
 int pSEVEN(int j){// this was a bit difficult one
     for(int i = 0; i < j; i++){
-        for(int k = j-i-1; k > 1 ;k--){
+        for(int k = j-i-1; k > 1 ;  k--){
             cout<<" ";
 
         }
@@ -76,9 +76,29 @@ int pSEVEN(int j){// this was a bit difficult one
     }
 }
 
+int peight(int j){
+    //reverse of seventh one
+    for(int i = 0; i <=j ; i++){
+        //space
+        for(int k = 0; k < i ; k++){
+            cout<< ' ';
+
+        }
+        //stars
+        for(int l = 0; l <= 2*j - 2*i-1 ; l++){
+            cout<<"*";
+        }
+        for(int m =0 ; m <= i ; m++){
+            cout<< ' ';
+        }
+        cout<<endl;
+    }
+
+}
+
 
 int main(){
-  cout<<pSEVEN(5)<<endl;
+  cout<<peight(5)<<endl;
   return 0;
 
 

@@ -78,6 +78,55 @@ public:
      }
 
 
+     class Solution {
+public:
+    int maxArea(vector<int>& height) {
+
+        int st = 0; int end = height.size()-1;
+        int maxarea = INT_MIN;
+        int ht , wt , currarea;
+        
+        while(st < end){
+
+
+                ht = min(height[st] , height[end]);
+                wt = end - st;
+                
+             
+                currarea = ht * wt;
+                
+
+                maxarea =  max(maxarea, currarea);
+
+            
+
+              if( height[st] < height[end] ){
+           
+
+                st ++;
+
+                
+
+
+                
+                
+            
+            }else{
+               
+
+                end--;
+
+            }
+
+             
+            
+        }
+        return maxarea;
+        
+    }
+};
+
+
 
     
 

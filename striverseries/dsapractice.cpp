@@ -164,6 +164,32 @@ public:
 };
 
 
+class Solution {
+public:
+    bool isPalindrome(int x) {
+        if(x < 0){
+            return false;
+        }
+        long dig = 0;
+        int n = 0;
+        int old = x;
+
+        while(x != 0){
+            n = x % 10;
+            dig = dig * 10 + n;
+            x = x / 10;
+            
+        }
+        if(dig == old){
+            return true;
+        }else{
+            return false;
+        }
+        
+    }
+};
+
+
 
 
 
